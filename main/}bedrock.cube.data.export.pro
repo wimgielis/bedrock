@@ -754,7 +754,7 @@ If( 1 = 0 );
     	'pSuppressZero', 1, 'pSuppressConsol', 1, 'pSuppressRules', 1, 'pSuppressConsolStrings', 1,
     	'pZeroSource', 0, 'pCubeLogging', 0, 'pTemp', 1,
     	'pFilePath', '', 'pFileName', '',
-    	'pDelim', ',', 'pQuote', '"', 'pTitleRecord', 1, 'pSandbox', pSandbox, 'pSubN', pSubN
+    	'pDelim', ',', 'pQuote', '"', 'pTitleRecord', 1, 'pSandbox', pSandbox, 'pSubN', pSubN, 'pCharacterSet', 'TM1CS_UTF8'
 	);
 EndIf;
 #EndRegion CallThisProcess
