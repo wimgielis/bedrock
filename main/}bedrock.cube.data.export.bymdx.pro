@@ -764,7 +764,7 @@ EndIf;
 # Use case: Intended for development/prototyping or in Production environment.
 # 1. Export data for import into another TM1 model to eliminate possibility of locking.
 # 2. Export data for import into ERP system.
-#
+# 3. MDX for view create requires to have the MDX statement in 1 line.
 # Note:
 # * The view must be guaranteed to have no alternate hierarchies
 #   We rely on }bedrock.cube.view.create.bymdx to create the view for us
@@ -1160,7 +1160,7 @@ nRet = ExecuteProcess('}bedrock.cube.view.create.bymdx',
      'pLogOutput', pLogOutput,
      'pStrictErrorHandling', pStrictErrorHandling,
      'pCube', pCube,
-     'pView', cDefaultView,
+     'pView', cView,
      'pMDXExpr', pMDXExpr,
      'pTemp', pTemp
      );
@@ -1391,3 +1391,4 @@ EndIf;
 925,""
 926,""
 927,""
+
